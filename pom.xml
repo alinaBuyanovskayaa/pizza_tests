@@ -22,14 +22,12 @@
 
     <dependencies>
 
-        <!-- Selenium WebDriver 4.27.0 -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.27.0</version>
         </dependency>
 
-        <!-- TestNG 7.10.2 -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
