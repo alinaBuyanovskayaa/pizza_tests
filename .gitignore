@@ -1,0 +1,34 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / VS Code (на случай смены IDE)
+.settings/
+.project
+.classpath
+.vscode/
+
+# macOS
+.DS_Store
+._*
+
+# Логи и отчёты тестов
+*.log
+test-output/
+allure-results/
+screenshots/
+
+# Прочее
+*.class
+*.jar
+!maven-wrapper.jar
