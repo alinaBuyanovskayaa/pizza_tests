@@ -6,16 +6,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
 public class BaseTest {
 
     protected WebDriver driver;
+    protected WebDriverWait wait;
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver,Duration.ofSeconds(ConfigReader.getExplicitWait()));
 
         driver.manage().window().setSize(new Dimension(
                 ConfigReader.getBrowserWidth(),
