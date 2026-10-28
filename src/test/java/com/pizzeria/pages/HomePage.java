@@ -42,7 +42,9 @@ public class HomePage extends BasePage {
     }
 
     public void clickRightArrow() {
-        waitForClickable(rightArrow).click();
+        WebElement arrow = waitForVisibility(rightArrow);
+       ((JavascriptExecutor) driver).executeScript("arguments[0].click();", arrow);
+
     }
 
     public String getActivePizzaTitle() {

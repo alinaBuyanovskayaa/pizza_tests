@@ -3,6 +3,9 @@
     <test name="Home Page Tests">
         <classes>
             <class name="com.pizzeria.tests.HomePageTest"/>
+            <class name="com.pizzeria.tests.PizzaPageTest"/> 
+            <class name="com.pizzeria.tests.CartTest"/> 
+
         </classes>
     </test>
 </suite>
